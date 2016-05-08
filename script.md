@@ -49,6 +49,16 @@ No more autowiring error due to switch to `CustomProfileConfiguration`.
 `#beanFromMainConfiguration`: "Generate -> @Autowired Dependency" -> Environment.
 
 
+### Caching
+Setup `CachingConfig` context.
+`CachingService` & 'CachingServiceImpl': `@Cacheable` inspections and code insight.
+
+
+### EL
+`CachingServiceImpl`: autocompletion, rename parameter, `#root`
+
+
+
 ## Working with XML
 
 
