@@ -2,7 +2,6 @@ package springtips.T01_unmappedConfiguration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
-import org.springframework.core.env.Environment;
 
 // Create Spring Facet and add this class to new fileset --> gutter icons appear
 @Configuration
@@ -24,8 +23,11 @@ public class MainConfiguration {
 
     @Bean(name = "customName")
     @Description("Some description for this bean.")
-    public String aBeanFromUnmappedConfiguration() {
+    public String beanFromMainConfiguration() {
         return "Hi";
+
+        // Generate->@Autowired Dependency
+//        return "Hi" + environment.getProperty("user.name");
     }
 
     @Bean

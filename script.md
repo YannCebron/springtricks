@@ -46,6 +46,7 @@ Demonstrate "Convert to CTOR parameter" quickfix and explain motivation.
 Activate "@Profile("customProfile")" and make it active in IDE. Existing `@Qualifier` becomes invalid, remove it.
 No more autowiring error due to switch to `CustomProfileConfiguration`.
 
+`#beanFromMainConfiguration`: "Generate -> @Autowired Dependency" -> Environment.
 
 
 ## Working with XML
