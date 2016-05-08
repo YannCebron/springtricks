@@ -1,4 +1,4 @@
-package springtips.T01_unmappedConfiguration.scanned;
+package springtips.configuration.scanned;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

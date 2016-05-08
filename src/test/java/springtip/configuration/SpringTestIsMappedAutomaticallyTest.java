@@ -1,4 +1,4 @@
-package springtip.T01_unmappedConfiguration;
+package springtip.configuration;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

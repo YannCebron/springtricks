@@ -1,4 +1,4 @@
-package springtips.T01_unmappedConfiguration;
+package springtips.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.*;
 @Configuration
 
 // includes ScannedConfiguration
-@ComponentScan("springtips.T01_unmappedConfiguration.scanned.*")
+@ComponentScan("springtips.configuration.scanned.*")
 //@MyComponentScan(myPackagesAreListedHere = "springtips.T01_unmappedConfiguration.scanned.*")
 
 @Import(ImportedConfig.class)
