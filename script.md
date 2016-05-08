@@ -14,7 +14,7 @@ Open Project. Notice "Spring Configuration Check" notification.
 Explain necessity to setup contexts. Use "Create Default Context" for simple apps (unless
 auto-configured context should be used (SB/MVC).
 
-Open MainConfiguration, apply "Create Spring Facet", gutter icons etc. start working.
+Open `MainConfiguration`, apply "Create Spring Facet", gutter icons etc. start working.
 Open Test, no need for setup.
 
 Mention "parent context" (used in Spring MVC automatically) and possibility to
@@ -24,7 +24,7 @@ Open "Spring Models Diagram" to visualize the full context graph.
 In `importedXml.xml`: uncomment 2nd `<component-scan>` to visualize cycle detection.
 
 ### Code: Navigating the context
-Open MainConfiguration. Demonstrate `@ComponentScan` gutter and code insight on @ImportXX annotations.
+Open `MainConfiguration`. Demonstrate `@ComponentScan` gutter and code insight on `@ImportXX` annotations.
 Uncomment `@MyComponentScan` and demonstrate `@AliasFor` support.
 
 "File | Settings | Editor | General | Gutter Icons" can be used to customize.
@@ -32,14 +32,14 @@ Uncomment `@MyComponentScan` and demonstrate `@AliasFor` support.
 
 ### Spring Toolwindow
 Demonstrate basic functionality. Toggle implicit/infrastructure (`@ComponentScan`/`<component-scan>`) beans.
-Demonstrate *Alt+F1* from `@Bean` to select in tool window.
+"Navigate -> Select In..." from `@Bean` to select it in tool window.
 
 
 
 ## Working with Code
 
 ### @Autowiring and @Profile
-Choose Active Profile "mainProfile".
+"Change Active Spring Profiles": enable "mainProfile".
 `MainConfiguration#autowiredLongBean`: demonstrate "Add @Qualifier" quickfix.
 Demonstrate "Convert to CTOR parameter" quickfix and explain motivation.
 
