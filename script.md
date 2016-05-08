@@ -5,7 +5,9 @@ Use IntelliJ IDEA 2016.2 (EAP).
 Use Presentation Mode, check font size (File | Settings | Appearance & Behavior | Appearance).
 Adjust Documentation Font Size in Spring toolwindow.
 
-## General/IDE
+
+
+## General/Navigation
 
 ### Spring Facet/Contexts
 Open Project. Notice "Spring Configuration Check" notification.
@@ -33,6 +35,9 @@ Demonstrate basic functionality. Toggle implicit/infrastructure (`@ComponentScan
 Demonstrate *Alt+F1* from `@Bean` to select in tool window.
 
 
+
+## Working with Code
+
 ### @Autowiring and @Profile
 Choose Active Profile "mainProfile".
 `MainConfiguration#autowiredLongBean`: demonstrate "Add @Qualifier" quickfix.
@@ -42,3 +47,13 @@ Activate "@Profile("customProfile")" and make it active in IDE. Existing `@Quali
 No more autowiring error due to switch to `CustomProfileConfiguration`.
 
 
+
+## Working with XML
+
+
+
+## Spring Boot
+
+
+
+## Spring MVC
