@@ -84,6 +84,18 @@ Add `spring.io.Resource` property, code-insight, quickfix to create missing file
 
 
 ## Spring MVC
+Make sure Web facet exists and web resource path `/` is mapped to `/web/`
+
+Auto-configuration via `DispatcherServletInitializer`, detects `ViewResolver` code setup etc.
+
+Gutter icon in `MyController` and "Goto Related" from view
+
+"Goto Symbol": navigate to request mapping by entering `/`-prefix
+
+Spring toolwindow MVC tab, note `/redirectUrl`
+
+`MyController.requestMappingWithPathVariable`: code-insight, refactoring
+
 
 
 
