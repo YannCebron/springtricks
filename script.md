@@ -57,6 +57,8 @@ Setup `CachingConfig` context.
 ### EL
 `CachingServiceImpl`: autocompletion, rename parameter, `#root`
 
+`OrderService`: `@PreAuthorize` code insight
+
 `OrderService`: navigate to listener, EL expression in `OrderEventProcessor`
 
 
