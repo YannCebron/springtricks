@@ -12,9 +12,6 @@ import org.springframework.context.annotation.*;
 
 @Import(ImportedConfig.class)
 @ImportResource("importResource.xml")
-
-@Profile("mainProfile")
-//@Profile("customProfile")
 public class MainConfiguration {
 
     // --> ScannedConfiguration
