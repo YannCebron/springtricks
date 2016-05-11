@@ -83,11 +83,25 @@ Add `spring.io.Resource` property, code-insight, quickfix to create missing file
 
 
 
-## Spring Boot
-
-
-
 ## Spring MVC
+
+
+
+## Spring Boot
+Wizard: demonstrate search, disabled dependencies have tooltip to show required SB version, create project
+
+SB Main class: model graph "Show library models" to visualize autoconfig
+
+Add `@EnableIntegration`, quickfix to add corresponding starter
+
+Create dummy `@ConfigurationProperties` class with `String` property, setup annotation-processor
+
+Use key in `application.properties`, "Find Usages" on setter navigates to this usage
+
+Add `META-INF/additional-spring-configuration-metadata.json` and add some hints
+
+Demonstrate using SB run configuration, duplicate run config and overriding configuration keys
+
 
 
 ## Spring API
