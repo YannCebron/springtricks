@@ -8,7 +8,7 @@ import org.springframework.context.annotation.*;
 
 // includes ScannedConfiguration
 @ComponentScan("springtips.configuration.scanned.*")
-@MyComponentScan(myPackagesAreListedHere = "springtips.configuration.scanned.*")
+//@MyComponentScan(myPackagesAreListedHere = "springtips.configuration.scanned.*")
 
 @Import(ImportedConfig.class)
 @ImportResource("importResource.xml")
