@@ -57,6 +57,7 @@ Setup `CachingConfig` context.
 ### EL
 `CachingServiceImpl`: autocompletion, rename parameter, `#root`
 
+`OrderService`: navigate to listener, EL expression in `OrderEventProcessor`
 
 
 ## Working with XML
