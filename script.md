@@ -62,8 +62,24 @@ Setup `CachingConfig` context.
 `OrderService`: navigate to listener, EL expression in `OrderEventProcessor`
 
 
+
 ## Working with XML
-`SimpleBean#setAutowiredBean`: gutter navigation, intention "Make autowired dependencies explicit" on `default-autowire=byType`
+`SimpleBean#setAutowiredBean`: gutter navigation, navigate to autowired dependency.
+
+Duplicate bean definition `autowiredBean`, "Show bean candidates", "View | Quick Definition"
+
+Intention "Make autowired dependencies explicit" on `default-autowire=byType`
+
+Intention to convert `<property>` to p-namespace attribute
+
+`SimpleBean`: add dummy property and generator CTOR, XML highlights "No matching constructor" + quickfix
+
+Use `ref` on generated `<constructor-arg>`, intention to create new bean from usage
+
+Add `spring.io.Resource` property, code-insight, quickfix to create missing file
+
+
+"Generate by Pattern" -> "Property Placeholder Configurer" using `myProperties.properties`, `${..}` reference
 
 
 
