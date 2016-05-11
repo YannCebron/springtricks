@@ -63,6 +63,7 @@ Setup `CachingConfig` context.
 
 
 ## Working with XML
+`SimpleBean#setAutowiredBean`: gutter navigation, intention "Make autowired dependencies explicit" on `default-autowire=byType`
 
 
 
