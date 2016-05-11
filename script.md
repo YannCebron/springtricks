@@ -55,6 +55,8 @@ Setup `CachingConfig` context.
 
 
 ### EL
+Spring EL color scheme can now be configured
+
 `CachingServiceImpl`: autocompletion, rename parameter, `#root`
 
 `OrderService`: `@PreAuthorize` code insight
