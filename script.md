@@ -2,7 +2,9 @@
 
 ## Preparation
 Use IntelliJ IDEA 2016.2 (EAP).
+
 Use Presentation Mode, check font size (File | Settings | Appearance & Behavior | Appearance).
+
 Adjust Documentation Font Size in Spring toolwindow.
 
 
@@ -25,6 +27,7 @@ In `importedXml.xml`: uncomment 2nd `<component-scan>` to visualize cycle detect
 
 ### Code: Navigating the context
 Open `MainConfiguration`. Demonstrate `@ComponentScan` gutter and code insight on `@ImportXX` annotations.
+
 Uncomment `@MyComponentScan` and demonstrate `@AliasFor` support.
 
 "File | Settings | Editor | General | Gutter Icons" can be used to customize.
@@ -32,6 +35,7 @@ Uncomment `@MyComponentScan` and demonstrate `@AliasFor` support.
 
 ### Spring Toolwindow
 Demonstrate basic functionality. Toggle implicit/infrastructure (`@ComponentScan`/`<component-scan>`) beans.
+
 "Navigate -> Select In..." from `@Bean` to select it in tool window.
 
 
@@ -40,7 +44,9 @@ Demonstrate basic functionality. Toggle implicit/infrastructure (`@ComponentScan
 
 ### @Autowiring and @Profile
 "Change Active Spring Profiles": enable "mainProfile".
+
 `MainConfiguration#autowiredLongBean`: demonstrate "Add @Qualifier" quickfix.
+
 Demonstrate "Convert to CTOR parameter" quickfix and explain motivation.
 
 Activate "@Profile("customProfile")" and make it active in IDE. Existing `@Qualifier` becomes invalid, remove it.
@@ -51,6 +57,7 @@ No more autowiring error due to switch to `CustomProfileConfiguration`.
 
 ### Caching
 Setup `CachingConfig` context.
+
 `CachingService` & 'CachingServiceImpl': `@Cacheable` inspections and code insight.
 
 
