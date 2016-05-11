@@ -5,6 +5,8 @@ Use IntelliJ IDEA 2016.2 (EAP).
 
 Use Presentation Mode, check font size (File | Settings | Appearance & Behavior | Appearance).
 
+Show shortcuts!
+
 Adjust Documentation Font Size in Spring toolwindow.
 
 
@@ -19,8 +21,7 @@ auto-configured context should be used (SB/MVC).
 Open `MainConfiguration`, apply "Create Spring Facet", gutter icons etc. start working.
 Open Test, no need for setup.
 
-Mention "parent context" (used in Spring MVC automatically) and possibility to
-have recursive parent relationship.
+Mention "parent context" (used in Spring MVC automatically).
 
 Open "Spring Models Diagram" to visualize the full context graph.
 In `importedXml.xml`: uncomment 2nd `<component-scan>` to visualize cycle detection.
@@ -47,12 +48,12 @@ Demonstrate basic functionality. Toggle implicit/infrastructure (`@ComponentScan
 
 `MainConfiguration#autowiredLongBean`: demonstrate "Add @Qualifier" quickfix.
 
+`#beanFromMainConfiguration`: "Generate -> @Autowired Dependency" -> Environment.
+
 Demonstrate "Convert to CTOR parameter" quickfix and explain motivation.
 
-Activate "@Profile("customProfile")" and make it active in IDE. Existing `@Qualifier` becomes invalid, remove it.
+Activate "customProfile" in IDE. Existing `@Qualifier` becomes invalid, remove it.
 No more autowiring error due to switch to `CustomProfileConfiguration`.
-
-`#beanFromMainConfiguration`: "Generate -> @Autowired Dependency" -> Environment.
 
 
 ### Caching
@@ -73,6 +74,8 @@ Spring EL color scheme can now be configured
 
 
 ## Working with XML
+Add XML to new context.
+
 `SimpleBean#setAutowiredBean`: gutter navigation, navigate to autowired dependency.
 
 Duplicate bean definition `autowiredBean`, "Show bean candidates", "View | Quick Definition"
@@ -109,13 +112,15 @@ Spring toolwindow MVC tab, note `/redirectUrl`
 
 
 ## Spring Boot
-Wizard: demonstrate search, disabled dependencies have tooltip to show required SB version, create project
+Wizard: demonstrate search, disabled dependencies have tooltip to show required SB version
+
+Choose `Web` and create project
 
 SB Main class: model graph "Show library models" to visualize autoconfig
 
-Add `@EnableIntegration`, quickfix to add corresponding starter
+Add `@EnableCaching`, quickfix to add corresponding starter
 
-Create dummy `@ConfigurationProperties` class with `String` property, setup annotation-processor
+Create dummy `@ConfigurationProperties` class with `String` property, setup annotation-processor with c/p from doc
 
 Use key in `application.properties`, "Find Usages" on setter navigates to this usage
 
