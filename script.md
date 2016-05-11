@@ -71,3 +71,7 @@ Setup `CachingConfig` context.
 
 
 ## Spring MVC
+
+
+## Spring API
+Spring plugin can extended or used from your custom plugin via OpenAPI [http://www.jetbrains.org/intellij/sdk/docs/reference_guide/frameworks_and_external_apis/spring_api.html]
