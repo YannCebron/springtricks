@@ -118,7 +118,7 @@ Choose `Web` and create project
 
 SB Main class: model graph "Show library models" to visualize autoconfig
 
-Add `@EnableCaching`, quickfix to add corresponding starter
+Add `@EnableWebSocket`, quickfix to add corresponding starter
 
 Create dummy `@ConfigurationProperties` class with `String` property, setup annotation-processor with c/p from doc
 
