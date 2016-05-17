@@ -6,6 +6,6 @@
     <context:component-scan base-package="springtips.configuration.xmlScan.*"/>
 
     <!-- Uncomment for visualizing cycle in Spring Model Graph-->
-    <!--<context:component-scan base-package="springtips.T01_unmappedConfiguration.*"/>-->
+    <!--<context:component-scan base-package="springtips.configuration.*"/>-->
 
 </beans>
