@@ -1,4 +1,4 @@
-package springtips.configuration.scanned;
+package springtips.configuration.profileConfigs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

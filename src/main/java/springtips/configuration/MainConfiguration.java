@@ -2,15 +2,16 @@ package springtips.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
+import springtips.configuration.profileConfigs.CustomProfileConfiguration;
+import springtips.configuration.profileConfigs.ScannedConfiguration;
 
 // Create Spring Facet and add this class to new fileset --> gutter icons appear
 @Configuration
 
-// includes ScannedConfiguration
 @ComponentScan("springtips.configuration.scanned.*")
 //@MyComponentScan(myPackagesAreListedHere = "springtips.configuration.scanned.*")
 
-@Import(ImportedConfig.class)
+@Import({ImportedConfig.class, CustomProfileConfiguration.class, ScannedConfiguration.class})
 @ImportResource("importResource.xml")
 public class MainConfiguration {
 
