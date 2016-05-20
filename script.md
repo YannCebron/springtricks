@@ -131,4 +131,4 @@ Demonstrate using SB run configuration, duplicate run config and overriding conf
 
 
 ## Spring API
-Spring plugin can extended or used from your custom plugin via OpenAPI [http://www.jetbrains.org/intellij/sdk/docs/reference_guide/frameworks_and_external_apis/spring_api.html]
+Spring plugin can extended or used from your custom plugin via [Spring OpenAPI](http://www.jetbrains.org/intellij/sdk/docs/reference_guide/frameworks_and_external_apis/spring_api.html)
