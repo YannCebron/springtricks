@@ -59,7 +59,7 @@ No more autowiring error due to switch to `CustomProfileConfiguration`.
 ### Caching
 Setup `CachingConfig` context.
 
-`CachingService` & 'CachingServiceImpl': `@Cacheable` inspections and code insight.
+`CachingService` & `CachingServiceImpl`: `@Cacheable` inspections and code insight.
 
 
 ### EL
