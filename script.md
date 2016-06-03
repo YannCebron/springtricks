@@ -15,8 +15,8 @@ Adjust Documentation Font Size in Spring toolwindow.
 
 ### Spring Facet/Contexts
 Open Project. Notice "Spring Configuration Check" notification.
-Explain necessity to setup contexts. Use "Create Default Context" for simple apps (unless
-auto-configured context should be used (SB/MVC).
+Explain necessity to setup contexts. Use "Create Default Context" for simple apps.
+If there's an autodetected context, you will be notified (SB/MVC), can add additional manual context.
 
 Open `MainConfiguration`, apply "Create Spring Facet", gutter icons etc. start working.
 Open Test, no need for setup.
