@@ -12,7 +12,7 @@ import springtips.configuration.profileConfigs.ScannedConfiguration;
 //@MyComponentScan(myPackagesAreListedHere = "springtips.configuration.scanned.*")
 
 @Import({ImportedConfig.class, CustomProfileConfiguration.class, ScannedConfiguration.class})
-@ImportResource("importResource.xml")
+@ImportResource("classpath*:/springtips/configuration/importResource.xml")
 public class MainConfiguration {
 
     // --> ScannedConfiguration
