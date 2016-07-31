@@ -1,6 +1,5 @@
 package springtips.caching;
 
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,9 +10,9 @@ import java.util.List;
 public class CachingServiceImpl implements CachingService {
 
     @Override
-    @Cacheable
 //    @Cacheable(cacheManager = "customCacheManager",
-//               condition = "end - start < 100")
+//            keyGenerator = "customKeyGenerator",
+//            condition = "end - start < 100")
     public List<Integer> buildIntegerList(int start, int end) {
         List<Integer> integerList = new ArrayList<>();
         for (int i = start; i < end; i++) {
