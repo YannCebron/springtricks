@@ -1,1 +1,2 @@
-MySpringFactoriesKey=springtips.configuration.springFactories.MySpringFactoriesClass
+org.springframework.context.ApplicationListener=\
+  springtips.configuration.springFactories.MyApplicationListener
