@@ -1,34 +1,41 @@
 package springtips.configuration;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @SuppressWarnings("ALL")
 @Configuration
 public class GenericsAutowiringConfiguration {
 
-    private final List<Integer> integers;
-    private final List<Double> doubles;
+    private final Repository<Employee> employeeRepository;
+    private final Repository<Department> departmentRepository;
 
-    @Autowired
-    public GenericsAutowiringConfiguration(List<Integer> myIntegerList,
-                                           List<Double> myDoubleList) {
-        this.integers = myIntegerList;
-        this.doubles = myDoubleList;
+    public GenericsAutowiringConfiguration(Repository<Employee> employeeRepository,
+                                           Repository<Department> departmentRepository) {
+        this.employeeRepository = employeeRepository;
+        this.departmentRepository = departmentRepository;
     }
 
     @Bean
-    List<Integer> integerList() {
-        return new ArrayList<>();
+    Repository<Employee> employeeRepository() {
+        return new Repository<Employee>() {
+        };
     }
 
     @Bean
-    List<Double> doubleList() {
-        return new ArrayList<>();
+    Repository<Department> departmentRepositoryRepository() {
+        return new Repository<Department>() {
+        };
     }
 
+
+    public interface Repository<T> {
+    }
+
+
+    private static class Employee {
+    }
+
+    private static class Department {
+    }
 }
