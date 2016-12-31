@@ -1,0 +1,32 @@
+ext.springVersion = '4.3.5.RELEASE'
+ext.springSecurityVersion = '4.1.4.RELEASE'
+ext.junitVersion = '4.12'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+jar {
+  baseName = 'springtricks'
+  version = '1.0-SNAPSHOT'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile "org.springframework:spring-webmvc:${springVersion}"
+  compile "org.springframework:spring-context:${springVersion}"
+  compile "org.springframework:spring-context-support:${springVersion}"
+  compile "org.springframework.security:spring-security-core:${springSecurityVersion}"
+  compile 'org.freemarker:freemarker:2.3.23'
+  compile 'javax.servlet:javax.servlet-api:3.0.1'
+
+  testCompile "org.springframework:spring-test:${springVersion}"
+  testCompile "junit:junit:${junitVersion}"
+}
+
