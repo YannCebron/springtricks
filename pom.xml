@@ -10,7 +10,8 @@
 
     <description>Sample Project for 40 Tips and Tricks for Spring in IntelliJ IDEA</description>
     <properties>
-        <spring.version>4.3.0.RC2</spring.version>
+        <spring.version>4.3.5.RELEASE</spring.version>
+        <spring-security.version>4.1.4.RELEASE</spring-security.version>
         <junit.version>4.12</junit.version>
     </properties>
 
@@ -49,7 +50,7 @@
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
-            <version>4.1.0.RELEASE</version>
+            <version>${spring-security.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
