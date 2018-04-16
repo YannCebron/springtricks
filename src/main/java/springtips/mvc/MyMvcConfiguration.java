@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
 @Configuration
-@ComponentScan("springtips.mvc.*")
+@ComponentScan("springtips.mvc")
 public class MyMvcConfiguration extends WebMvcConfigurationSupport {
 
     @Override
