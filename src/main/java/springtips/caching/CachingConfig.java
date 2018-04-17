@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("springtips.caching.*")
+@ComponentScan("springtips.caching")
 @EnableCaching
 public class CachingConfig {
 
